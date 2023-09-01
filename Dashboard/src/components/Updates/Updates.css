@@ -1,0 +1,21 @@
+.updates {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  padding: 1rem;
+  gap: 1rem;
+  background: white;
+  font-size: 13px;
+  border-radius: 0.7rem;
+}
+.update {
+  display: flex;
+  gap: 0.5rem;
+}
+.update > img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.noti > div > span:nth-of-type(1) {
+  font-weight: bold;
+}

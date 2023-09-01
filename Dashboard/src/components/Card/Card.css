@@ -1,0 +1,105 @@
+.Ccard {
+  height: 7rem;
+  cursor: pointer;
+  position: relative !important;
+  border-radius: 0.7rem;
+  color: white;
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  width: 90%;
+  padding: 1rem;
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) !important;
+  pointer-events: all !important;
+}
+.Ccard:hover {
+  box-shadow: none !important;
+}
+.radialBar {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.radialBar > span {
+  font-size: 17px;
+  font-weight: bold;
+}
+.CircularProgressbar {
+  width: 4rem;
+  overflow: visible;
+}
+.CircularProgressbar-trail {
+  display: none !important;
+}
+.CircularProgressbar-path {
+  stroke: white !important;
+  stroke-width: 12px !important;
+  filter: drop-shadow(2px 4px 6px white);
+}
+.CircularProgressbar-text {
+  fill: white !important;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.details > span:nth-of-type(1) {
+  font-size: 22px;
+  font-weight: bold;
+}
+.details > span:nth-of-type(2) {
+  font-size: 12px;
+}
+.Ecard {
+  width: calc((713px / 100) * 70);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 9;
+  padding: 1rem;
+  position: absolute;
+  left: 13rem;
+  border-radius: 1rem;
+}
+.Ecard > span:nth-of-type(1) {
+  font-size: 26px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 15 white;
+}
+.Ecard > span:nth-of-type(2) {
+  font-size: 15px;
+  color: white;
+}
+.Ccontainer {
+  width: 85%;
+}
+@media screen and (max-width: 1200px) {
+  .Ccard {
+    width: 95%;
+  }
+  .Ecard {
+    top: 8rem;
+    left: 10rem;
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .Ccard {
+    width: 100%;
+  }
+  .Ecard {
+    width: 80%;
+    height: 50vh;
+    top: 8rem;
+    left: 25px;
+  }
+}

@@ -1,0 +1,27 @@
+.RSide {
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.CR {
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .RSide {
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .RSide {
+    width: 100%;
+    margin-top: 0;
+  }
+  .RSide > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}

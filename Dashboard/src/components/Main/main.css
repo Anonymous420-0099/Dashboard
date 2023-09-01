@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.Pcont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.wrapper {
+  width: calc(100% / 3);
+}
+@media screen and (max-width: 1200px) {
+  .main {
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+  .Pcont {
+    flex-direction: column;
+  }
+  .wrapper {
+    height: 9rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    align-items: center;
+  }
+  .Pcont {
+    width: 80%;
+  }
+  .wrapper {
+    width: 100%;
+  }
+}
